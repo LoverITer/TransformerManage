@@ -1,0 +1,755 @@
+2018-05-16 09:29:34.505 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:29:34.693 ERROR [main]
+				org.apache.cxf.jaxrs.client.JAXRSClientFactoryBean.createWebClient():228 -org.apache.cxf.bus.extension.ExtensionException : Could not load extension class org.apache.cxf.ws.policy.PolicyBuilderImpl.
+2018-05-16 09:31:27.704 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:32:14.390 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:32:14.687 DEBUG [main]
+				org.apache.cxf.jaxrs.provider.ProviderFactory.createProvider():232 -Problem with creating the default provider org.apache.cxf.jaxrs.provider.json.JSONProvider: org/codehaus/jettison/mapped/TypeConverter
+2018-05-16 09:32:14.733 DEBUG [main]
+				org.apache.cxf.jaxrs.provider.ProviderFactory.createProvider():232 -Problem with creating the default provider org.apache.cxf.jaxrs.provider.json.JSONProvider: org/codehaus/jettison/mapped/TypeConverter
+2018-05-16 09:32:14.749 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@159f197 to phase setup
+2018-05-16 09:32:14.749 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@78aab498 to phase prepare-send
+2018-05-16 09:32:14.749 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@78aab498 to phase prepare-send
+2018-05-16 09:32:14.764 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@1677d1 to phase pre-logical
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://localhost:10086/?wsdl}WebClient.http-conduit' has been (re)configured for plain http.
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://localhost:10086/?wsdl}WebClient.http-conduit'
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://localhost:10086/?wsdl}WebClient.http-conduit'
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://localhost:10086/?wsdl}WebClient.http-conduit' has been configured for plain http.
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.jaxrs.client.ClientMessageObserver@2473d930
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxrs.client.WebClient$BodyWriter@5ae50ce6 to phase write
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():687 -Chain org.apache.cxf.phase.PhaseInterceptorChain@3ba9ad43 was created. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [ClientRequestFilterInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  write [BodyWriter]
+
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@159f197
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.ws.policy.PolicyOutInterceptor.handle():63 -No binding operation info.
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@1677d1
+2018-05-16 09:32:14.811 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@78aab498
+2018-05-16 09:32:14.921 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.unwind():442 -Invoking handleFault on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@78aab498
+2018-05-16 09:32:14.921 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.unwind():442 -Invoking handleFault on interceptor org.apache.cxf.jaxrs.client.spec.ClientRequestFilterInterceptor@1677d1
+2018-05-16 09:32:14.921 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.unwind():442 -Invoking handleFault on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@159f197
+2018-05-16 09:32:14.921 WARN  [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doLog():452 -Interceptor for {http://localhost:10086/?wsdl}WebClient has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault: Could not send Message.
+	at org.apache.cxf.interceptor.MessageSenderInterceptor.handleMessage(MessageSenderInterceptor.java:48) ~[cxf-api-2.7.13.jar:2.7.13]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:272) ~[cxf-api-2.7.13.jar:2.7.13]
+	at org.apache.cxf.jaxrs.client.AbstractClient.doRunInterceptorChain(AbstractClient.java:635) [cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at org.apache.cxf.jaxrs.client.WebClient.doChainedInvocation(WebClient.java:1071) [cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:878) [cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at org.apache.cxf.jaxrs.client.WebClient.doInvoke(WebClient.java:852) [cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at org.apache.cxf.jaxrs.client.WebClient.invoke(WebClient.java:312) [cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at com.virgo.service.impl.ForecastServiceImpl.main(ForecastServiceImpl.java:25) [classes/:na]
+Caused by: java.net.ProtocolException: Invalid HTTP method: test
+	at java.net.HttpURLConnection.setRequestMethod(Unknown Source) ~[na:1.8.0_161]
+	at sun.net.www.protocol.http.HttpURLConnection.setRequestMethod(Unknown Source) ~[na:1.8.0_161]
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit.setupConnection(URLConnectionHTTPConduit.java:125) ~[cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at org.apache.cxf.transport.http.HTTPConduit.prepare(HTTPConduit.java:477) ~[cxf-bundle-jaxrs-2.7.13.jar:2.7.13]
+	at org.apache.cxf.interceptor.MessageSenderInterceptor.handleMessage(MessageSenderInterceptor.java:46) ~[cxf-api-2.7.13.jar:2.7.13]
+	... 7 common frames omitted
+2018-05-16 09:43:52.116 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:44:40.224 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:44:40.396 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:9090/helloWorldService?wsdl
+2018-05-16 09:44:40.455 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 09:44:40.455 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 09:44:40.551 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 09:44:40.562 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:44:40.563 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:44:40.563 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 09:44:40.564 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@12d4bf7e
+2018-05-16 09:44:40.641 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 09:44:40.642 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 09:44:42.755 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <http://localhost:9090/helloWorldService?wsdl> as stream 
+2018-05-16 09:44:42.756 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <http://localhost:9090/helloWorldService?wsdl> type <class java.net.URL>
+2018-05-16 09:44:42.756 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 09:44:42.756 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:44:42.757 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:44:42.757 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 09:44:42.757 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@3d680b5a
+2018-05-16 09:44:42.757 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 09:44:42.757 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 09:44:44.780 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <http://localhost:9090/helloWorldService?wsdl> as stream 
+2018-05-16 09:44:44.781 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <http://localhost:9090/helloWorldService?wsdl> type <class java.net.URL>
+2018-05-16 09:45:17.490 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:45:17.646 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:10086/?wsdl
+2018-05-16 09:45:17.690 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 09:45:17.690 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 09:45:17.753 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 09:45:17.753 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:45:17.753 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:45:17.753 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 09:45:17.753 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@12d4bf7e
+2018-05-16 09:45:17.815 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 09:45:17.815 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 09:47:55.796 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 09:47:55.952 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:10086/?wsdl
+2018-05-16 09:47:56.015 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 09:47:56.016 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 09:47:56.065 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 09:47:56.065 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:47:56.065 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 09:47:56.065 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 09:47:56.065 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@12d4bf7e
+2018-05-16 09:47:56.128 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 09:47:56.128 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:45:43.086 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 10:45:43.487 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:10094/?wsdl
+2018-05-16 10:45:43.550 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 10:45:43.550 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 10:45:43.613 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 10:45:43.613 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:45:43.613 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:45:43.628 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 10:45:43.628 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@12d4bf7e
+2018-05-16 10:45:43.691 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 10:45:43.691 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:47:05.960 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 10:47:06.132 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:10094/?wsdl
+2018-05-16 10:47:06.179 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 10:47:06.191 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 10:47:06.255 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 10:47:06.255 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:47:06.255 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:47:06.255 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 10:47:06.255 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@7adda9cc
+2018-05-16 10:47:06.333 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 10:47:06.333 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:47:44.945 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 10:47:45.141 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:10094/?wsdl
+2018-05-16 10:47:45.199 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 10:47:45.199 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 10:47:45.277 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 10:47:45.277 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:47:45.277 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:47:45.277 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 10:47:45.277 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@7adda9cc
+2018-05-16 10:47:45.371 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 10:47:45.371 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:47:46.113 INFO  [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.logGeneratedClassNames():688 -Created classes: com.sun.xml.internal.fastinfoset.util.Forecast, com.sun.xml.internal.fastinfoset.util.ForecastResponse, com.sun.xml.internal.fastinfoset.util.ObjectFactory, com.sun.xml.internal.fastinfoset.util.StringArray, com.sun.xml.internal.fastinfoset.util.Test, com.sun.xml.internal.fastinfoset.util.TestResponse
+2018-05-16 10:47:47.588 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.doInvoke():500 -Invoke, operation info: [BindingOperationInfo: {util.fastinfoset.internal.xml.sun.com}test], params: [KEVIN]
+2018-05-16 10:47:47.593 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setContext():709 -set requestContext to message be{}
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():985 -Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@68ace111]
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():989 -Interceptors contributed by client: []
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():993 -Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@1f9d6c7b, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6df20ade, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@4fbb001b, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4010d494]
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():997 -Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@341a8659, org.apache.cxf.interceptor.StaxOutInterceptor@4943defe, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5eefa415, org.apache.cxf.interceptor.WrappedOutInterceptor@181d7f28, org.apache.cxf.interceptor.BareOutInterceptor@78d50a3c, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@2fb69ff6, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@cda4919]
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():1003 -Interceptors contributed by databinding: []
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@68ace111 to phase setup
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@1f9d6c7b to phase prepare-send
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6df20ade to phase pre-logical
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@4fbb001b to phase pre-logical
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4010d494 to phase pre-logical
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@341a8659 to phase pre-stream
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@4943defe to phase pre-stream
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5eefa415 to phase pre-logical
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.WrappedOutInterceptor@181d7f28 to phase marshal
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.BareOutInterceptor@78d50a3c to phase marshal
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@2fb69ff6 to phase post-logical
+2018-05-16 10:47:47.594 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@cda4919 to phase write
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit' has been (re)configured for plain http.
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit'
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit'
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit' has been configured for plain http.
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.endpoint.ClientImpl@1d8e2eea
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():687 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was created. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@68ace111
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4010d494
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.jaxws.interceptors.HolderOutInterceptor.handleMessage():57 -op: [OperationInfo: {util.fastinfoset.internal.xml.sun.com}test]
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.jaxws.interceptors.HolderOutInterceptor.handleMessage():59 -op.hasOutput(): true
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.jaxws.interceptors.HolderOutInterceptor.handleMessage():61 -op.getOutput().size(): 1
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6df20ade
+2018-05-16 10:47:47.625 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@4fbb001b
+2018-05-16 10:47:47.688 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5eefa415
+2018-05-16 10:47:47.688 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@2fb69ff6
+2018-05-16 10:47:47.688 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@1f9d6c7b
+2018-05-16 10:47:47.688 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@78f9ed3e to phase prepare-send-ending
+2018-05-16 10:47:47.688 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2018-05-16 10:47:47.688 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@341a8659
+2018-05-16 10:47:47.797 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@4943defe
+2018-05-16 10:47:47.813 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@5767b2af to phase pre-stream-ending
+2018-05-16 10:47:47.813 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2018-05-16 10:47:47.813 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@cda4919
+2018-05-16 10:47:47.813 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@ba1f559 to phase write-ending
+2018-05-16 10:47:47.813 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  write-ending [SoapOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2018-05-16 10:47:47.829 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.WrappedOutInterceptor@181d7f28
+2018-05-16 10:47:47.829 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.BareOutInterceptor@78d50a3c
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@ba1f559
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@5767b2af
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@78f9ed3e
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -SOAPAction: "test"
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:47:47.844 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.onFirstWrite():203 -Sending POST Message with Headers to http://localhost:10094/ Conduit :{util.fastinfoset.internal.xml.sun.com}Application.http-conduit
+
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():768 -Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyInInterceptor@6ea94d6a]
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():772 -Interceptors contributed by client: []
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():776 -Interceptors contributed by endpoint: [org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@28486680, org.apache.cxf.jaxws.interceptors.HolderInInterceptor@4d7e7435, org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4a1e3ac1]
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():780 -Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentInInterceptor@6e78fcf5, org.apache.cxf.interceptor.StaxInInterceptor@56febdc, org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@3b8ee898, org.apache.cxf.interceptor.DocLiteralInInterceptor@7d151a, org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@294bdeb4, org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5300f14a, org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1f86099a, org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@77bb0ab5, org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@f2c488]
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():787 -Interceptors contributed by databinging: []
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@6ea94d6a to phase receive
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@28486680 to phase post-logical
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@4d7e7435 to phase pre-invoke
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4a1e3ac1 to phase pre-invoke
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@6e78fcf5 to phase receive
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@56febdc to phase post-stream
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@3b8ee898 to phase read
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.DocLiteralInInterceptor@7d151a to phase unmarshal
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@294bdeb4 to phase unmarshal
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5300f14a to phase read
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1f86099a to phase read
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@77bb0ab5 to phase post-protocol
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@f2c488 to phase pre-protocol
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():687 -Chain org.apache.cxf.phase.PhaseInterceptorChain@54acff7d was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@6ea94d6a
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyVerificationInInterceptor@54534abf to phase pre-invoke
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@54acff7d was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor, PolicyVerificationInInterceptor]
+
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@6e78fcf5
+2018-05-16 10:47:47.969 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@56febdc
+2018-05-16 10:47:47.985 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@1c6e0a08 to phase post-invoke
+2018-05-16 10:47:47.985 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@54acff7d was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor, PolicyVerificationInInterceptor]
+  post-invoke [StaxInEndingInterceptor]
+
+2018-05-16 10:47:47.985 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5300f14a
+2018-05-16 10:47:48.000 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@3b8ee898
+2018-05-16 10:47:48.000 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1f86099a
+2018-05-16 10:47:48.000 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@f2c488
+2018-05-16 10:47:48.000 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@77bb0ab5
+2018-05-16 10:47:48.000 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.DocLiteralInInterceptor@7d151a
+2018-05-16 10:47:48.016 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@294bdeb4
+2018-05-16 10:47:48.016 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@28486680
+2018-05-16 10:47:48.032 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4a1e3ac1
+2018-05-16 10:47:48.032 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@4d7e7435
+2018-05-16 10:47:48.032 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyVerificationInInterceptor@54534abf
+2018-05-16 10:47:48.032 DEBUG [main]
+				org.apache.cxf.ws.policy.PolicyVerificationInInterceptor.handle():116 -Verified policies for inbound message.
+2018-05-16 10:47:48.032 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@1c6e0a08
+2018-05-16 10:48:22.960 DEBUG [main]
+				org.apache.cxf.common.logging.LogUtils.<clinit>():140 -Using org.apache.cxf.common.logging.Slf4jLogger for logging.
+2018-05-16 10:48:23.179 DEBUG [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.createClient():293 -Creating client from WSDL http://localhost:10094/?wsdl
+2018-05-16 10:48:23.242 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+2018-05-16 10:48:23.242 DEBUG [main]
+				org.apache.cxf.resource.DefaultResourceManager.findResource():103 -resolving resource <null> type <interface org.apache.cxf.Bus>
+2018-05-16 10:48:23.320 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been (re)configured for plain http.
+2018-05-16 10:48:23.320 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:48:23.320 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'
+2018-05-16 10:48:23.320 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit' has been configured for plain http.
+2018-05-16 10:48:23.335 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.transport.TransportURIResolver$1@7adda9cc
+2018-05-16 10:48:23.420 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 10:48:23.420 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{http://cxf.apache.org}TransportURIResolver.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:48:24.161 INFO  [main]
+				org.apache.cxf.endpoint.dynamic.DynamicClientFactory.logGeneratedClassNames():688 -Created classes: com.sun.xml.internal.fastinfoset.util.Forecast, com.sun.xml.internal.fastinfoset.util.ForecastResponse, com.sun.xml.internal.fastinfoset.util.ObjectFactory, com.sun.xml.internal.fastinfoset.util.StringArray, com.sun.xml.internal.fastinfoset.util.Test, com.sun.xml.internal.fastinfoset.util.TestResponse
+2018-05-16 10:48:25.507 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.doInvoke():500 -Invoke, operation info: [BindingOperationInfo: {util.fastinfoset.internal.xml.sun.com}test], params: [KEVIN]
+2018-05-16 10:48:25.523 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setContext():709 -set requestContext to message be{}
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():985 -Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@68ace111]
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():989 -Interceptors contributed by client: []
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():993 -Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@1f9d6c7b, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6df20ade, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@4fbb001b, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4010d494]
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():997 -Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@341a8659, org.apache.cxf.interceptor.StaxOutInterceptor@4943defe, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5eefa415, org.apache.cxf.interceptor.WrappedOutInterceptor@181d7f28, org.apache.cxf.interceptor.BareOutInterceptor@78d50a3c, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@2fb69ff6, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@cda4919]
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.setupInterceptorChain():1003 -Interceptors contributed by databinding: []
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@68ace111 to phase setup
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@1f9d6c7b to phase prepare-send
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6df20ade to phase pre-logical
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@4fbb001b to phase pre-logical
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4010d494 to phase pre-logical
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@341a8659 to phase pre-stream
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@4943defe to phase pre-stream
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5eefa415 to phase pre-logical
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.WrappedOutInterceptor@181d7f28 to phase marshal
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.BareOutInterceptor@78d50a3c to phase marshal
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@2fb69ff6 to phase post-logical
+2018-05-16 10:48:25.524 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@cda4919 to phase write
+2018-05-16 10:48:25.540 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setTlsClientParameters():905 -Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit' has been (re)configured for plain http.
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():371 -No Trust Decider configured for Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit'
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():384 -No Auth Supplier configured for Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit'
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.logConfig():403 -Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit' has been configured for plain http.
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.setMessageObserver():46 -registering incoming observer: org.apache.cxf.endpoint.ClientImpl@1d8e2eea
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():687 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was created. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@68ace111
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@4010d494
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.jaxws.interceptors.HolderOutInterceptor.handleMessage():57 -op: [OperationInfo: {util.fastinfoset.internal.xml.sun.com}test]
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.jaxws.interceptors.HolderOutInterceptor.handleMessage():59 -op.hasOutput(): true
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.jaxws.interceptors.HolderOutInterceptor.handleMessage():61 -op.getOutput().size(): 1
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6df20ade
+2018-05-16 10:48:25.555 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@4fbb001b
+2018-05-16 10:48:25.618 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@5eefa415
+2018-05-16 10:48:25.618 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@2fb69ff6
+2018-05-16 10:48:25.618 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@1f9d6c7b
+2018-05-16 10:48:25.618 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@78f9ed3e to phase prepare-send-ending
+2018-05-16 10:48:25.618 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2018-05-16 10:48:25.618 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@341a8659
+2018-05-16 10:48:25.727 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@4943defe
+2018-05-16 10:48:25.743 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@5767b2af to phase pre-stream-ending
+2018-05-16 10:48:25.743 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2018-05-16 10:48:25.743 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@cda4919
+2018-05-16 10:48:25.758 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@ba1f559 to phase write-ending
+2018-05-16 10:48:25.758 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@49298ce7 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  write-ending [SoapOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+2018-05-16 10:48:25.758 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.WrappedOutInterceptor@181d7f28
+2018-05-16 10:48:25.758 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.BareOutInterceptor@78d50a3c
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@ba1f559
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@5767b2af
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@78f9ed3e
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -Accept: */*
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.transport.http.Headers.logProtocolHeaders():257 -SOAPAction: "test"
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.makeTrustDecision():1741 -No Trust Decider for Conduit '{util.fastinfoset.internal.xml.sun.com}Application.http-conduit'. An afirmative Trust Decision is assumed.
+2018-05-16 10:48:25.774 DEBUG [main]
+				org.apache.cxf.transport.http.HTTPConduit.onFirstWrite():203 -Sending POST Message with Headers to http://localhost:10094/ Conduit :{util.fastinfoset.internal.xml.sun.com}Application.http-conduit
+
+2018-05-16 10:48:25.883 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():768 -Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyInInterceptor@6ea94d6a]
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():772 -Interceptors contributed by client: []
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():776 -Interceptors contributed by endpoint: [org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@28486680, org.apache.cxf.jaxws.interceptors.HolderInInterceptor@4d7e7435, org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4a1e3ac1]
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():780 -Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentInInterceptor@6e78fcf5, org.apache.cxf.interceptor.StaxInInterceptor@56febdc, org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@3b8ee898, org.apache.cxf.interceptor.DocLiteralInInterceptor@7d151a, org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@294bdeb4, org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5300f14a, org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1f86099a, org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@77bb0ab5, org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@f2c488]
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.endpoint.ClientImpl.onMessage():787 -Interceptors contributed by databinging: []
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@6ea94d6a to phase receive
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@28486680 to phase post-logical
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@4d7e7435 to phase pre-invoke
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4a1e3ac1 to phase pre-invoke
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@6e78fcf5 to phase receive
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@56febdc to phase post-stream
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@3b8ee898 to phase read
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.DocLiteralInInterceptor@7d151a to phase unmarshal
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@294bdeb4 to phase unmarshal
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5300f14a to phase read
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1f86099a to phase read
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@77bb0ab5 to phase post-protocol
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@f2c488 to phase pre-protocol
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():687 -Chain org.apache.cxf.phase.PhaseInterceptorChain@54acff7d was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@6ea94d6a
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.ws.policy.PolicyVerificationInInterceptor@54534abf to phase pre-invoke
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@54acff7d was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor, PolicyVerificationInInterceptor]
+
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@6e78fcf5
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@56febdc
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.add():206 -Adding interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@1c6e0a08 to phase post-invoke
+2018-05-16 10:48:25.899 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.outputChainToLog():685 -Chain org.apache.cxf.phase.PhaseInterceptorChain@54acff7d was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  post-stream [StaxInInterceptor]
+  read [ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor]
+  pre-protocol [MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor, PolicyVerificationInInterceptor]
+  post-invoke [StaxInEndingInterceptor]
+
+2018-05-16 10:48:25.915 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@5300f14a
+2018-05-16 10:48:25.915 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@3b8ee898
+2018-05-16 10:48:25.915 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@1f86099a
+2018-05-16 10:48:25.915 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@f2c488
+2018-05-16 10:48:25.930 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@77bb0ab5
+2018-05-16 10:48:25.930 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.DocLiteralInInterceptor@7d151a
+2018-05-16 10:48:25.946 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@294bdeb4
+2018-05-16 10:48:25.946 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@28486680
+2018-05-16 10:48:25.962 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@4a1e3ac1
+2018-05-16 10:48:25.962 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@4d7e7435
+2018-05-16 10:48:25.962 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyVerificationInInterceptor@54534abf
+2018-05-16 10:48:25.962 DEBUG [main]
+				org.apache.cxf.ws.policy.PolicyVerificationInInterceptor.handle():116 -Verified policies for inbound message.
+2018-05-16 10:48:25.962 DEBUG [main]
+				org.apache.cxf.phase.PhaseInterceptorChain.doIntercept():269 -Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@1c6e0a08

@@ -1,0 +1,2 @@
+2018-05-16 09:29:34.693 ERROR [main]
+				org.apache.cxf.jaxrs.client.JAXRSClientFactoryBean.createWebClient():228 - org.apache.cxf.bus.extension.ExtensionException : Could not load extension class org.apache.cxf.ws.policy.PolicyBuilderImpl.
